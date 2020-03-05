@@ -1,5 +1,11 @@
+// Libraries
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+
+// Components
+import Header from './components/Header/Header';
+
+// Styles
 import './App.css';
 
 function App() {
@@ -12,14 +18,19 @@ function App() {
 			)
 			.then(response => {
 				setDailyPhoto(response.data);
-				console.log(response.data);
 			})
 			.catch('Error');
 	}, []);
 
+	useEffect(() => {
+		console.log('response.data');
+	}, [dailyPhoto]);
+
 	return (
 		<div className="App">
-			<p></p>
+			<div className="appContainer">
+				<Header />
+			</div>
 		</div>
 	);
 }
