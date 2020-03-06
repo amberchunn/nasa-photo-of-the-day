@@ -5,6 +5,7 @@ import axios from 'axios';
 // Components
 import Header from './components/Header/Header';
 import Image from './components/Image/Image';
+import ImageInfo from './components/Image/ImageInfo';
 
 // Styles
 import './App.css';
@@ -37,6 +38,7 @@ const App = props => {
 					photoUrl={dailyPhoto.url}
 					credit={dailyPhoto.copyright}
 				/>
+				<ImageInfo title={dailyPhoto.title} description={dailyPhoto.explanation} />
 			</div>
 		</div>
 	);
