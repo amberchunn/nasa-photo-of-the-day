@@ -24,10 +24,6 @@ const App = props => {
 			.catch('Error');
 	}, []);
 
-	useEffect(() => {
-		// console.log(dailyPhoto);
-	}, [dailyPhoto]);
-
 	return (
 		<div className="App">
 			<div className="appContainer">

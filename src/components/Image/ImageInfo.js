@@ -1,14 +1,26 @@
 // Libraries
 import React from 'react';
+import styled from 'styled-components';
 
 // Styles
-import './Image.less';
+const PhotoTitle = styled.h5`
+	font-size: 1.25em;
+	color: #411b6d;
+	margin: 0;
+`;
+const Description = styled.p`
+	font-size: 1em;
+	line-height: 1.25em;
+	color: #0f110c;
+	max-width: 80%;
+	text-align: left;
+`;
 
 const ImageInfo = props => {
 	return (
 		<div className="photo-information">
-			<h5 className="photo-title">{props.title}</h5>
-			<p className="description">{props.description}</p>
+			<PhotoTitle>{props.title}</PhotoTitle>
+			<Description>{props.description}</Description>
 		</div>
 	);
 };

@@ -1,20 +1,28 @@
 //Libraries
 import React from 'react';
+import styled from 'styled-components';
 
 // Styles
-import './Image.less';
-
+const Date = styled.p`
+	font-size: 1em;
+	color: #0f3056;
+	font-weight: 700;
+`;
+const Credit = styled.p`
+	font-size: 1.25em;
+	color: #0f3056;
+`;
+const DailyPhoto = styled.img`
+	border: 10px solid #7f3063;
+`;
 const Image = props => {
-	// {
-	// 	console.log(props);
-	// }
 	return (
 		<div>
-			<p className="date">{props.date}</p>
+			<Date>{props.date}</Date>
 			<div className="photo">
-				<img src={props.photoUrl} alt={props.title} />
+				<DailyPhoto src={props.photoUrl} alt={props.title}></DailyPhoto>
 			</div>
-			<p className="photo-credit">{props.credit}</p>
+			<Credit>{props.credit}</Credit>
 		</div>
 	);
 };

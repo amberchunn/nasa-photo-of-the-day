@@ -1,8 +1,19 @@
 // Libraries
 import React from 'react';
+import styled from 'styled-components';
 
 // Styles
-import './Header.less';
+const Title = styled.h1`
+	font-size: 2rem;
+	text-align: center;
+	color: #411b6d;
+`;
+const SubHeading = styled.p`
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: left;
+	color: #0f110c;
+`;
 
 function Header() {
 	const pageHeading = 'Photo of the Day';
@@ -11,8 +22,8 @@ function Header() {
 
 	return (
 		<header className="header">
-			<h1 className="page-heading">{pageHeading}</h1>
-			<p className="sub-heading">{subHeading}</p>
+			<Title>{pageHeading}</Title>
+			<SubHeading>{subHeading}</SubHeading>
 		</header>
 	);
 }
