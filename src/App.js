@@ -4,11 +4,12 @@ import axios from 'axios';
 
 // Components
 import Header from './components/Header/Header';
+import Image from './components/Image/Image';
 
 // Styles
 import './App.css';
 
-function App() {
+const App = props => {
 	const [dailyPhoto, setDailyPhoto] = useState({});
 
 	useEffect(() => {
@@ -23,17 +24,22 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		console.log('response.data');
+		// console.log(dailyPhoto);
 	}, [dailyPhoto]);
 
 	return (
 		<div className="App">
 			<div className="appContainer">
+				{/* {console.log(dailyPhoto)} */}
 				<Header />
+				<Image
+					date={dailyPhoto.date}
+					photoUrl={dailyPhoto.url}
+					credit={dailyPhoto.copyright}
+				/>
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;
-// whPRS6eip4SlzNN6SUeDlSoBFnpTUZlrkoiR5Uz7;

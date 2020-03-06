@@ -1,4 +1,7 @@
+// Libraries
 import React from 'react';
+
+// Styles
 import './Header.less';
 
 function Header() {
