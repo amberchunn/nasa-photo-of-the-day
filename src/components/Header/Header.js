@@ -6,13 +6,14 @@ import styled from 'styled-components';
 const Title = styled.h1`
 	font-size: 2rem;
 	text-align: center;
-	color: #411b6d;
+	color: #336699;
 `;
 const SubHeading = styled.p`
 	font-size: 1rem;
 	line-height: 1.5rem;
-	text-align: left;
+	text-align: center;
 	color: #0f110c;
+	max-width: 60%;
 `;
 
 function Header() {

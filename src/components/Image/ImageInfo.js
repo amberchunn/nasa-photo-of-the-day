@@ -5,7 +5,7 @@ import styled from 'styled-components';
 // Styles
 const PhotoTitle = styled.h5`
 	font-size: 1.25em;
-	color: #411b6d;
+	color: #DA3099;
 	margin: 0;
 `;
 const Description = styled.p`
@@ -13,7 +13,7 @@ const Description = styled.p`
 	line-height: 1.25em;
 	color: #0f110c;
 	max-width: 80%;
-	text-align: left;
+	text-align: justify;
 `;
 
 const ImageInfo = props => {
