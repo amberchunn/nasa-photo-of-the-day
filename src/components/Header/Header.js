@@ -14,6 +14,7 @@ const SubHeading = styled.p`
 	text-align: center;
 	color: #0f110c;
 	max-width: 60%;
+	margin: 0 auto;
 `;
 
 function Header() {

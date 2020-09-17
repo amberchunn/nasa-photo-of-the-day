@@ -13,7 +13,7 @@ const Credit = styled.p`
 	color: #0f3056;
 `;
 const DailyPhoto = styled.img`
-	border: 2px solid #333;
+	border: 5px solid #333;
 `;
 const Image = props => {
 	return (

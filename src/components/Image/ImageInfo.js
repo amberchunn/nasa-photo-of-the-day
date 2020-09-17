@@ -5,14 +5,15 @@ import styled from 'styled-components';
 // Styles
 const PhotoTitle = styled.h5`
 	font-size: 1.25em;
-	color: #DA3099;
-	margin: 0;
+	color: #003399;
+	margin: 0 auto;
 `;
 const Description = styled.p`
 	font-size: 1em;
 	line-height: 1.25em;
 	color: #0f110c;
-	max-width: 80%;
+	max-width: 70%;
+	margin: 0 auto;
 	text-align: justify;
 `;
 
